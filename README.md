@@ -1,9 +1,11 @@
-Tailwind
-redux
-google-places-autocomplete
-google distance api
-google directions api
+# Uber Clone - React Native Expo
 
-react native maps
+- Tailwind CSS with NativeWind
+- Redux
+- Expo MapView
+- Google Distance API
+- Google Directions API
+- Google Places Autocomplete API
 
-- react native maps directions
+<p>
+<hr>
