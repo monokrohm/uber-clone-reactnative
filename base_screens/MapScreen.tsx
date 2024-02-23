@@ -7,7 +7,7 @@ import RideOptionsCard from "../components/RideOptionsCard";
 import { Bars3Icon } from "react-native-heroicons/solid";
 import { useNavigation } from "@react-navigation/native";
 import { useAppDispatch } from "../reduxHooks";
-import { setDestination } from "../features/navSlice";
+import { setDestination, setOrigin } from "../features/navSlice";
 
 const MapScreen = () => {
   const Stack = createNativeStackNavigator();
@@ -19,6 +19,7 @@ const MapScreen = () => {
       <TouchableOpacity
         onPress={() => {
           navigation.navigate("Home");
+          dispatch(setOrigin(null));
           dispatch(setDestination(null));
         }}
         className="absolute top-12 left-4 p-3 bg-gray-100 rounded-full z-50 shadow-lg android:border border-gray-300"

@@ -19,9 +19,11 @@ const Map = () => {
     if (!origin || !destination) return;
 
     // Zoom to fit
-    mapRef.current.fitToSuppliedMarkers(["origin", "destination"], {
-      edgePadding: { top: 50, right: 50, left: 50, bottom: 50 },
-    });
+    setTimeout(() => {
+      mapRef.current.fitToSuppliedMarkers(["origin", "destination"], {
+        edgePadding: { top: 50, right: 50, left: 50, bottom: 50 },
+      });
+    }, 500);
   }, [origin, destination]);
 
   useEffect(() => {
